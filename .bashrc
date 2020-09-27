@@ -133,12 +133,34 @@ function promps {
     local  GREEN="\[\e[1;32m\]"
     local  WHITE="\[\e[00m\]"
     local  GRAY="\[\e[1;37m\]"
+    local  WHITE_BACK_BLUE="\[\e[1;37;44m\]"
+    local  BEGIN_TRI="\[\e[0;34;47m\]"
+    local  BLACK_BACK_WHITE="\[\e[0;30;47m\]"
+    local  END="\[\e[0;37m\]"
 
     case $TERM in
         xterm*) TITLEBAR='\[\e]0;\W\007\]';;
         *)      TITLEBAR="";;
     esac
     local BASE="\u@\h"
-    PS1="${TITLEBAR}${GREEN}${BASE}${WHITE}:${BLUE}\W${GREEN}\$(parse_git_branch)${BLUE}\$${WHITE} "
+    PS1="${TITLEBAR}${WHITE_BACK_BLUE}${BASE}${BEGIN_TRI} ${BLACK_BACK_WHITE}\W${RED}\$(parse_git_branch)${END}${WHITE} "
 }
 promps
+
+
+#function promps {
+    # 色は気分で変えたいかもしれないので変す宣言しておく
+#    local  BLUE="\[\e[1;34m\]"
+#    local  RED="\[\e[1;31m\]"
+#    local  GREEN="\[\e[1;32m\]"
+#    local  WHITE="\[\e[00m\]"
+#    local  GRAY="\[\e[1;37m\]"
+
+#    case $TERM in
+#        xterm*) TITLEBAR='\[\e]0;\W\007\]';;
+#        *)      TITLEBAR="";;
+#    esac
+#    local BASE="\u@\h"
+#    PS1="${TITLEBAR}${GREEN}${BASE}${WHITE}:${BLUE}\W${GREEN}\$(parse_git_branch)${BLUE}\$${WHITE} "
+#}
+
