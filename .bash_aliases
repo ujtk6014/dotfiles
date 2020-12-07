@@ -19,3 +19,9 @@ alias ..3='cd ../../..'
 alias agi='sudo apt install'
 alias agr='sudo apt remove'
 
+#onedrive
+alias one='onedrive --synchronize --single-directory 01_Research/02_Master'
+
+
+#softethernet
+alias vpnserver='sudo /etc/init.d/vpnserver start && cd /usr/local/vpnserver/ && sudo ./vpncmd'

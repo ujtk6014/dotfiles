@@ -131,10 +131,10 @@ function parse_git_branch {
 #     local  BLUE="\[\e[1;34m\]"
 #     local  RED="\[\e[1;31m\]"
 #     local  GREEN="\[\e[1;32m\]"
-#     local  WHITE="\[\e[00m\]"
+#     local  WHITE="\[\e[0;0m\]"
 #     local  GRAY="\[\e[1;37m\]"
-#     local  WHITE_BACK_BLUE="\[\e[1;37;44m\]"
-#     local  BEGIN_TRI="\[\e[0;34;47m\]"
+#     local  WHITE_BACK_BLUE="\[\e[1;37;42m\]"
+#     local  BEGIN_TRI="\[\e[0;32;47m\]"
 #     local  BLACK_BACK_WHITE="\[\e[0;30;47m\]"
 #     local  END="\[\e[0;37m\]"
 
