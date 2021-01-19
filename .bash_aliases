@@ -25,3 +25,5 @@ alias one='onedrive --synchronize --single-directory 01_Research/02_Master'
 
 #softethernet
 alias vpnserver='sudo /etc/init.d/vpnserver start && cd /usr/local/vpnserver/ && sudo ./vpncmd'
+alias vpnclient='sudo /etc/init.d/vpnclient start && cd /usr/local/vpnclient/ && sudo ./vpncmd'
+
